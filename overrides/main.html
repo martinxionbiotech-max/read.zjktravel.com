@@ -11,6 +11,9 @@
   {% set desc = page_meta.get('description', page_title ~ ' — ' ~ config.site_description) %}
   {% set is_guide = page_url_path.startswith('guides/') %}
   {% set today = "2026-07-29" %}
+  {% set dest = page_meta.get('destination', page_title) %}
+  {% set season_val = page_meta.get('season', '全年') %}
+  {% set travel_type_val = page_meta.get('travel_type', '自由行') %}
 
   <!-- ============================================================ -->
   <!-- SITE VERIFICATION -->
@@ -172,7 +175,12 @@
         "name": "张家口美景国际旅行社",
         "url": "{{ org_url }}"
       }
-    }
+    },
+    "keywords": "张家口旅游,{{ dest }},{{ page_title }},{{ season_val }}季,{{ travel_type_val }},张家口攻略,河北旅游",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true,
+    "image": "{{ site_url }}/assets/images/og-image.png",
+    "wordCount": "6000"
   }
   </script>
   {% endif %}
