@@ -9,7 +9,7 @@ SITE_DIR = os.path.join(os.path.dirname(__file__), "site")
 EXCLUDE = set()
 
 def generate_sitemap():
-    urls = []
+    urls = set()
     for root, dirs, files in os.walk(SITE_DIR):
         for f in files:
             if f == "index.html":
@@ -17,9 +17,9 @@ def generate_sitemap():
                 url_path = rel_path.replace("index.html", "")
                 if any(ex in url_path for ex in EXCLUDE):
                     continue
-                urls.append(f"{SITE_URL}/{url_path}")
+                urls.add(f"{SITE_URL}/{url_path}")
 
-    urls.sort()
+    urls = sorted(urls)
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
     xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     for url in urls:
