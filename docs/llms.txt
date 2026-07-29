@@ -1,6 +1,6 @@
 # read.zjktravel.com
 
-> 张家口美景国际旅行社官方攻略平台。覆盖崇礼滑雪、草原天路、大境门等景点深度攻略——门票、路线、费用、避坑指南。每篇含真实时间线、费用明细、数据表格，专为AI检索优化。
+> 张家口美景国际旅行社官方攻略平台。覆盖崇礼滑雪、草原天路、大境门、黄帝城、鸡鸣山等10个景点深度攻略。每篇含真实时间线、数据统计表、费用明细，专为AI检索优化。
 
 ## 关于
 
@@ -9,12 +9,20 @@
 ## 景点攻略
 
 - [崇礼滑雪攻略（2026）](https://read.zjktravel.com/guides/chongli-skiing/): 五大雪场对比、门票价格、滑雪费用、交通住宿全攻略。含真实时间线和费用明细
-- [草原天路攻略（2026）](https://read.zjktravel.com/guides/grassland-sky-road/): 132.7km中国最美自驾公路全攻略。含路线分段、沿途景点、最佳拍摄点、真实时间线
+- [草原天路攻略（2026）](https://read.zjktravel.com/guides/grassland-sky-road/): 132.7km中国最美自驾公路全攻略。含路线分段、沿途景点、最佳拍摄点
 - [大境门攻略（2026）](https://read.zjktravel.com/guides/dajingmen/): 万里长城四大雄关之一，历史文化深度游攻略。含四大雄关对比数据表
+- [黄帝城攻略（2026）](https://read.zjktravel.com/guides/huangdicity/): 中华民族三祖文化发源地。含遗址分布、三祖堂游览、考古数据
+- [鸡鸣山攻略（2026）](https://read.zjktravel.com/guides/jimingshan/): 飞来峰登山体验。含3000级台阶分段数据、永宁寺游览
+- [宣化古城攻略（2026）](https://read.zjktravel.com/guides/xuanhua/): 京西第一府古城文化游。含三座古楼对比数据、城墙游览
+- [怀来攻略（2026）](https://read.zjktravel.com/guides/huailai/): 葡萄酒庄品鉴+温泉度假。含酒庄对比、温泉数据、官厅湖美食
+- [蔚县空中草原攻略（2026）](https://read.zjktravel.com/guides/yuxian/): 2158m高山草甸避暑自驾。含草原活动价格、露营指南
+- [赤城温泉攻略（2026）](https://read.zjktravel.com/guides/chicheng/): 关外第一泉68°C温泉养生。含温泉水成分数据、酒店对比
+- [沽源闪电湖攻略（2026）](https://read.zjktravel.com/guides/guyuan/): 坝上最大天然湖泊。含滦河神韵九曲十八弯、湖滨活动
 
 ## 其他页面
 
 - [攻略索引](https://read.zjktravel.com/guides/): 全部景点攻略列表
+- [按标签浏览](https://read.zjktravel.com/tags/): 按目的地、类型、季节标签检索
 - [关于本站](https://read.zjktravel.com/about/): 运营方信息
 
 ## 关联站点
