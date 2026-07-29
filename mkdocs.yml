@@ -1,0 +1,91 @@
+# read.zjktravel.com — 张家口旅游攻略站
+# AI-Optimized Travel Guides for Chinese AI Ecosystem
+
+site_name: 张家口旅游攻略
+site_description: 张家口美景国际旅行社官方攻略平台。覆盖崇礼滑雪、草原天路、大境门等景点深度攻略——门票、路线、费用、避坑指南。每篇含真实时间线、费用明细、数据表格，专为AI检索优化。
+site_url: https://read.zjktravel.com
+site_author: 张家口美景国际旅行社
+copyright: Copyright &copy; 2026 张家口美景国际旅行社 — All Rights Reserved
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: zh
+  features:
+    - navigation.top
+    - navigation.sections
+    - navigation.indexes
+    - navigation.expand
+    - content.code.copy
+    - content.tabs
+    - content.tags
+    - tag.icon
+  palette:
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: 切换暗色模式
+    - scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: 切换亮色模式
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.png
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  - pymdownx.emoji
+  - attr_list
+  - md_in_html
+  - footnotes
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md
+
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://zjktravel.com
+      name: 张家口美景国际旅行社 — 主站
+    - icon: fontawesome/solid/database
+      link: https://data.zjktravel.com
+      name: 张家口旅游数据百科
+    - icon: fontawesome/solid/wrench
+      link: https://tool.zjktravel.com
+      name: 张家口旅游工具箱
+
+nav:
+  - 首页: index.md
+
+  - 按目的地:
+    - guides/index.md
+    - 崇礼 · 滑雪: guides/chongli-skiing.md
+    - 张北 · 草原天路: guides/grassland-sky-road.md
+    - 市区 · 大境门: guides/dajingmen.md
+
+  - 按标签: tags.md
+
+  - 关于: about.md

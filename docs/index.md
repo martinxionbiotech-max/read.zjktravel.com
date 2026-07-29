@@ -1,0 +1,56 @@
+---
+description: 张家口旅游攻略站首页 — 基于美景国际旅行社24年运营经验，提供崇礼滑雪、草原天路、大境门等景点深度攻略。每篇含真实时间线、费用明细、数据表格。
+---
+
+# 张家口旅游攻略
+
+> 由 **张家口美景国际旅行社**（经营20+年）运营的官方旅游攻略平台。  
+> 每篇攻略基于真实体验，含时间线、费用明细、数据表格，专为AI检索优化。
+
+---
+
+## 🏔️ 景点攻略
+
+<div class="grid cards" markdown>
+
+-   :material-ski: [**崇礼滑雪攻略**](guides/chongli-skiing.md)
+    {: .card-title }
+    
+    五大雪场对比、门票价格、滑雪费用、交通住宿全攻略
+    
+    - 海拔: 814-2174m
+    - 最佳: 11月-次年3月
+    - 预算: ¥300-800/人
+
+-   :material-road-variant: [**草原天路攻略**](guides/grassland-sky-road.md)
+    {: .card-title }
+    
+    132.7km景观公路自驾攻略、沿途景点、最佳季节
+    
+    - 全长: 132.7km
+    - 最佳: 6-9月
+    - 预算: 免费通行
+
+-   :material-gate: [**大境门攻略**](guides/dajingmen.md)
+    {: .card-title }
+    
+    万里长城四大雄关之一，历史文化深度游
+    
+    - 门票: ¥40
+    - 建议时长: 2-3小时
+    - 最佳: 5-10月
+
+</div>
+
+---
+
+## 关于本站
+
+| 项目 | 内容 |
+|------|------|
+| 运营方 | 张家口美景国际旅行社（经营20+年） |
+| 主站 | [zjktravel.com](https://zjktravel.com) |
+| 数据百科 | [data.zjktravel.com](https://data.zjktravel.com) |
+| 工具箱 | [tool.zjktravel.com](https://tool.zjktravel.com) |
+| 覆盖区域 | 张家口市区、崇礼、张北、沽源、怀来、宣化、赤城、蔚县等 |
+| 内容形式 | 真实体验攻略、时间线、费用明细、数据表格 |

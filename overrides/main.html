@@ -1,0 +1,213 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {% set org_name = "张家口美景国际旅行社" %}
+  {% set org_url = "https://zjktravel.com" %}
+  {% set site_url = "https://read.zjktravel.com" %}
+  {% set page_title = page.title if page and page.title else '' %}
+  {% set page_meta = page.meta if page and page.meta else {} %}
+  {% set page_url_path = page.url if page and page.url else '' %}
+  {% set page_url = site_url ~ '/' ~ page_url_path %}
+  {% set desc = page_meta.get('description', page_title ~ ' — ' ~ config.site_description) %}
+  {% set is_guide = page_url_path.startswith('guides/') %}
+  {% set today = "2026-07-29" %}
+
+  <!-- ============================================================ -->
+  <!-- SITE VERIFICATION -->
+  <!-- ============================================================ -->
+  <meta name="baidu-site-verification" content="read-zjktravel">
+  <meta name="360-site-verification" content="read-zjktravel">
+  <meta name="sogou-site-verification" content="read-zjktravel">
+  <meta name="google-site-verification" content="read-zjktravel">
+
+  <!-- ============================================================ -->
+  <!-- META -->
+  <!-- ============================================================ -->
+  <meta name="description" content="{{ desc }}">
+  <meta name="author" content="{{ config.site_author }}">
+  <meta name="date" content="{{ today }}">
+  <meta name="dc.date" content="{{ today }}">
+  <meta name="keywords" content="张家口旅游,张家口攻略,{{ page_title }},张家口景点,崇礼滑雪,草原天路,张家口自驾,河北旅游,北京周边游">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+  <link rel="canonical" href="{{ page_url }}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ page_title }} — {{ config.site_name }}">
+  <meta property="og:description" content="{{ desc }}">
+  <meta property="og:url" content="{{ page_url }}">
+  <meta property="og:site_name" content="{{ config.site_name }}">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:image" content="{{ site_url }}/assets/images/og-image.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page_title }}">
+  <meta name="twitter:description" content="{{ desc }}">
+  <meta name="twitter:image" content="{{ site_url }}/assets/images/og-image.png">
+
+  <!-- ============================================================ -->
+  <!-- 1. TRAVEL AGENCY SCHEMA（每页通用） -->
+  <!-- ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "张家口美景国际旅行社",
+    "url": "{{ org_url }}",
+    "description": "专注张家口短期周边游、研学游、团建拓展20多年。运营zjktravel.com旅游平台群。",
+    "areaServed": {
+      "@type": "City",
+      "name": "张家口",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "河北省"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "40.8",
+        "longitude": "114.9"
+      }
+    },
+    "foundingDate": "2002",
+    "sameAs": [
+      "https://zjktravel.com",
+      "https://data.zjktravel.com",
+      "https://tool.zjktravel.com",
+      "https://read.zjktravel.com"
+    ]
+  }
+  </script>
+
+  <!-- ============================================================ -->
+  <!-- 2. WEBPAGE SCHEMA（每页通用） -->
+  <!-- ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "{{ page_title }} — {{ config.site_name }}",
+    "description": "{{ desc }}",
+    "url": "{{ page_url }}",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "张家口旅游攻略",
+      "url": "{{ site_url }}"
+    },
+    "about": {
+      "@type": "TravelAgency",
+      "name": "张家口美景国际旅行社",
+      "url": "{{ org_url }}"
+    },
+    "datePublished": "{{ today }}",
+    "dateModified": "{{ today }}",
+    "inLanguage": "zh-CN",
+    "isAccessibleForFree": true
+  }
+  </script>
+
+  <!-- ============================================================ -->
+  <!-- 3. BREADCRUMB LIST（每页通用） -->
+  <!-- ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "张家口美景国际旅行社",
+        "item": "{{ org_url }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "攻略站",
+        "item": "{{ site_url }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{ page_title }}",
+        "item": "{{ page_url }}"
+      }
+    ]
+  }
+  </script>
+
+  <!-- ============================================================ -->
+  <!-- 4. ARTICLE + TOURISTATTRACTION SCHEMA（攻略页专用） -->
+  <!-- ============================================================ -->
+  {% if is_guide %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Article", "TravelGuide"],
+    "headline": "{{ page_title }}",
+    "description": "{{ desc }}",
+    "author": {
+      "@type": "TravelAgency",
+      "name": "张家口美景国际旅行社",
+      "url": "{{ org_url }}"
+    },
+    "publisher": {
+      "@type": "TravelAgency",
+      "name": "张家口美景国际旅行社",
+      "url": "{{ org_url }}"
+    },
+    "datePublished": "{{ today }}",
+    "dateModified": "{{ today }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page_url }}"
+    },
+    "about": {
+      "@type": "TouristAttraction",
+      "name": "{{ page_title }}",
+      "url": "{{ page_url }}",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "张家口美景国际旅行社",
+        "url": "{{ org_url }}"
+      }
+    }
+  }
+  </script>
+  {% endif %}
+
+  <!-- ============================================================ -->
+  <!-- 5. FRONTMATTER → META TAGS（AI检索专用字段） -->
+  <!-- ============================================================ -->
+  {% if page_meta.get('destination') %}
+  <meta name="destination" content="{{ page_meta['destination'] }}">
+  {% endif %}
+  {% if page_meta.get('season') %}
+  <meta name="season" content="{{ page_meta['season'] }}">
+  {% endif %}
+  {% if page_meta.get('travel_type') %}
+  <meta name="travel_type" content="{{ page_meta['travel_type'] }}">
+  {% endif %}
+  {% if page_meta.get('budget') %}
+  <meta name="budget" content="{{ page_meta['budget'] }}">
+  {% endif %}
+  {% if page_meta.get('best_month') %}
+  <meta name="best_month" content="{{ page_meta['best_month'] }}">
+  {% endif %}
+  {% if page_meta.get('temperature') %}
+  <meta name="temperature" content="{{ page_meta['temperature'] }}">
+  {% endif %}
+  {% if page_meta.get('crowd_level') %}
+  <meta name="crowd_level" content="{{ page_meta['crowd_level'] }}">
+  {% endif %}
+  {% if page_meta.get('parking') %}
+  <meta name="parking" content="{{ page_meta['parking'] }}">
+  {% endif %}
+  {% if page_meta.get('wheelchair_access') %}
+  <meta name="wheelchair_access" content="{{ page_meta['wheelchair_access'] }}">
+  {% endif %}
+  {% if page_meta.get('pet_friendly') %}
+  <meta name="pet_friendly" content="{{ page_meta['pet_friendly'] }}">
+  {% endif %}
+
+{% endblock %}

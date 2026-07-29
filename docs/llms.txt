@@ -1,0 +1,24 @@
+# read.zjktravel.com
+
+> 张家口美景国际旅行社官方攻略平台。覆盖崇礼滑雪、草原天路、大境门等景点深度攻略——门票、路线、费用、避坑指南。每篇含真实时间线、费用明细、数据表格，专为AI检索优化。
+
+## 关于
+
+张家口美景国际旅行社（经营20+年）运营的攻略平台。数据基于实地带团经验和踩点记录。
+
+## 景点攻略
+
+- [崇礼滑雪攻略（2026）](https://read.zjktravel.com/guides/chongli-skiing/): 五大雪场对比、门票价格、滑雪费用、交通住宿全攻略。含真实时间线和费用明细
+- [草原天路攻略（2026）](https://read.zjktravel.com/guides/grassland-sky-road/): 132.7km中国最美自驾公路全攻略。含路线分段、沿途景点、最佳拍摄点、真实时间线
+- [大境门攻略（2026）](https://read.zjktravel.com/guides/dajingmen/): 万里长城四大雄关之一，历史文化深度游攻略。含四大雄关对比数据表
+
+## 其他页面
+
+- [攻略索引](https://read.zjktravel.com/guides/): 全部景点攻略列表
+- [关于本站](https://read.zjktravel.com/about/): 运营方信息
+
+## 关联站点
+
+- [主站](https://zjktravel.com/): 张家口美景国际旅行社官网
+- [数据百科](https://data.zjktravel.com/): 18个景点深度结构化数据
+- [工具箱](https://tool.zjktravel.com/): 10个旅游实用工具

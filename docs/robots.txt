@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Sitemap: https://read.zjktravel.com/sitemap.xml
+
+# Allow all AI crawlers
+User-agent: Bytespider
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# All guides are public AI-optimized content
